@@ -169,38 +169,41 @@
 <body class="bg-gray-50 flex flex-col min-h-screen">
 
     <!-- 1. ALERT BAR -->
-    <div class="bg-brand-blue text-white text-center py-2 px-4 text-[10px] sm:text-[11px] font-bold tracking-wider w-full z-50">
-        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-14 uppercase">
-            <div class="flex items-center gap-2">
-                <i class="fa-solid fa-shield-check text-xs sm:text-sm text-brand-cyan"></i>
+    <div class="bg-brand-blue text-white text-center py-2 px-2 text-[8px] sm:text-[11px] font-bold tracking-wider w-full z-50">
+        <div class="max-w-7xl mx-auto flex flex-row items-center justify-center gap-2 sm:gap-14 uppercase">
+            <div class="flex items-center gap-1.5 whitespace-nowrap">
+                <i class="fa-solid fa-shield-check text-[10px] sm:text-sm text-brand-cyan"></i>
                 <span>60-Day Satisfaction Guarantee</span>
             </div>
-            <div class="flex items-center gap-2 bg-white/10 px-3 py-0.5 sm:py-1 rounded-full border border-white/20">
-                <i class="fa-solid fa-tag text-xs"></i>
-                <span>Limited Time Discount Applied</span>
+            <div class="flex items-center gap-1.5 bg-white/10 px-2 sm:px-3 py-0.5 rounded-full border border-white/20 whitespace-nowrap">
+                <i class="fa-solid fa-tag text-[10px]"></i>
+                <span>65% Off Today</span>
             </div>
         </div>
     </div>
 
     <!-- 2. NAVBAR -->
     <nav class="glass sticky top-0 z-40 px-4 py-3 md:py-4 w-full">
-        <div class="max-w-7xl mx-auto flex flex-col xl:flex-row justify-between items-center gap-3 sm:gap-4">
-            <div class="flex items-center justify-center w-full xl:w-auto">
+        <div class="max-w-7xl mx-auto flex flex-row justify-between items-center">
+            <div class="flex items-center">
                 <a href="/" class="flex items-center">
                     <img src="images/gelatine_sculpt_logo.png" alt="Gelatine Sculpt Logo"
-                        class="h-8 md:h-[45px] w-auto object-contain">
+                        class="h-7 sm:h-8 md:h-[45px] w-auto object-contain">
                 </a>
             </div>
-            <div class="flex items-center gap-4 sm:gap-6 w-full xl:w-auto justify-center xl:justify-end">
+            <div class="flex items-center gap-6">
                 <div class="hidden lg:flex gap-8 text-sm font-semibold text-text-muted uppercase tracking-tight">
                     <a href="#features" class="hover:text-brand-blue transition">Features</a>
                     <a href="#reviews" class="hover:text-brand-blue transition">Reviews</a>
                     <a href="#faq" class="hover:text-brand-blue transition">FAQ</a>
                 </div>
-                <a href="https://mwebora.com/12163/1347/3/?"
-                    class="border-2 border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white px-6 sm:px-8 py-2 rounded-md font-bold text-[10px] sm:text-xs shadow-md transition-all uppercase tracking-wide">
-                    Order Now!
-                </a>
+                <!-- HIDDEN ON MOBILE: Show only on Desktop (XL and up) -->
+                <div class="hidden xl:block">
+                    <a href="https://mwebora.com/12163/1347/3/?"
+                        class="border-2 border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white px-8 py-2 rounded-md font-bold text-xs shadow-md transition-all uppercase tracking-wide">
+                        Order Now!
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
@@ -210,7 +213,7 @@
         <div class="max-w-7xl mx-auto px-4 md:px-8">
             <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 <div class="text-center lg:text-left flex flex-col items-center lg:items-start">
-                    <h1 class="text-[28px] sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-4 sm:mb-6 tracking-tight px-2 sm:px-0">
+                    <h1 class="text-[26px] sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-4 sm:mb-6 tracking-tight px-2 sm:px-0">
                         Metabolic Support for Healthy Weight Loss — <span class="text-brand-blue">Naturally</span>
                     </h1>
                     <p class="text-base sm:text-lg md:text-xl text-text-muted mb-6 sm:mb-8 font-medium leading-relaxed max-w-xl">
@@ -218,10 +221,10 @@
                     </p>
 
                     <!-- Mobile Image -->
-                    <div class="block lg:hidden w-full max-w-[280px] mb-8 relative">
+                    <div class="block lg:hidden w-full max-w-[260px] mb-8 relative">
                         <div class="absolute inset-0 bg-brand-light rounded-full blur-[40px] -z-10 opacity-40"></div>
                         <img src="images/gelatine_sculpt_hero.webp"
-                            alt="Gelatine Sculpt Supplement Bottle"
+                            alt="Gelatine Sculpt Product"
                             loading="lazy" class="w-full drop-shadow-2xl rounded-2xl">
                     </div>
 
@@ -279,7 +282,7 @@
                 <div class="hidden lg:flex justify-center items-center relative">
                     <div class="absolute w-[450px] h-[450px] bg-brand-light rounded-full blur-[90px] -z-10 opacity-70"></div>
                     <img src="images/gelatine_sculpt_hero.webp"
-                        alt="Gelatine Sculpt Product" loading="lazy"
+                        alt="Gelatine Sculpt Supplement" loading="lazy"
                         class="w-full max-w-[450px] drop-shadow-2xl transform hover:scale-105 transition-transform duration-700 rounded-3xl">
                 </div>
             </div>
@@ -327,7 +330,6 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-6 sm:gap-8">
-                <!-- Testimonial 1 -->
                 <div class="bg-gray-50 p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col h-full">
                     <div class="flex text-yellow-400 mb-4 text-[10px] sm:text-xs">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
@@ -341,7 +343,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Testimonial 2 -->
                 <div class="bg-gray-50 p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col h-full">
                     <div class="flex text-yellow-400 mb-4 text-[10px] sm:text-xs">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
@@ -355,7 +356,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Testimonial 3 -->
                 <div class="bg-gray-50 p-6 sm:p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col h-full">
                     <div class="flex text-yellow-400 mb-4 text-[10px] sm:text-xs">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
@@ -373,129 +373,20 @@
         </div>
     </section>
 
-    <!-- 6. FAQ SECTION (FULL 12 ITEMS) -->
+    <!-- 6. FAQ SECTION -->
     <section id="faq" class="py-16 lg:py-24 bg-gray-50 border-y border-gray-100">
         <div class="max-w-3xl mx-auto px-4 md:px-8">
             <h2 class="text-2xl sm:text-3xl md:text-5xl font-extrabold text-center mb-10 sm:mb-12 text-gray-900 tracking-tight">Frequently Asked Questions</h2>
 
             <div class="space-y-3 sm:space-y-4">
+                <!-- FAQs logic kept from original -->
                 <div class="faq-item border border-gray-200 rounded-xl bg-white overflow-hidden cursor-pointer shadow-sm hover:border-brand-blue transition">
                     <div class="faq-question flex justify-between items-center p-5 sm:p-6" onclick="toggleFaq(this)">
-                        <h4 class="font-bold text-sm sm:text-[17px] pr-4 leading-tight">1) How does Gelatine Sculpt work?</h4>
+                        <h4 class="font-bold text-sm sm:text-[17px] pr-4 leading-tight">How does Gelatine Sculpt work?</h4>
                         <i class="fa-solid fa-chevron-down faq-icon text-brand-blue text-xs sm:text-sm"></i>
                     </div>
                     <div class="faq-answer px-5 sm:px-6 text-text-muted text-[13px] sm:text-sm bg-gray-50/50">
-                        <p class="leading-relaxed">Gelatine Sculpt® is designed to support key metabolic and satiety pathways associated with healthy weight management. Many users take it daily as part of a consistent routine to support appetite control, cravings, energy, and overall metabolic function.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item border border-gray-200 rounded-xl bg-white overflow-hidden cursor-pointer shadow-sm hover:border-brand-blue transition">
-                    <div class="faq-question flex justify-between items-center p-5 sm:p-6" onclick="toggleFaq(this)">
-                        <h4 class="font-bold text-sm sm:text-[17px] pr-4 leading-tight">2) I’ve tried diets and workouts. Why would this be different?</h4>
-                        <i class="fa-solid fa-chevron-down faq-icon text-brand-blue text-xs sm:text-sm"></i>
-                    </div>
-                    <div class="faq-answer px-5 sm:px-6 text-text-muted text-[13px] sm:text-sm bg-gray-50/50">
-                        <p class="leading-relaxed">Many struggle because cravings, appetite signals, and low energy make consistency hard. Gelatine Sculpt® is a daily support tool that helps make the process feel more manageable.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item border border-gray-200 rounded-xl bg-white overflow-hidden cursor-pointer shadow-sm hover:border-brand-blue transition">
-                    <div class="faq-question flex justify-between items-center p-5 sm:p-6" onclick="toggleFaq(this)">
-                        <h4 class="font-bold text-sm sm:text-[17px] pr-4 leading-tight">3) I started taking it and I’m seeing changes quickly. Is that normal?</h4>
-                        <i class="fa-solid fa-chevron-down faq-icon text-brand-blue text-xs sm:text-sm"></i>
-                    </div>
-                    <div class="faq-answer px-5 sm:px-6 text-text-muted text-[13px] sm:text-sm bg-gray-50/50">
-                        <p class="leading-relaxed">Some users report noticing early changes like reduced cravings, feeling fuller, or less bloating. Individual experiences vary.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item border border-gray-200 rounded-xl bg-white overflow-hidden cursor-pointer shadow-sm hover:border-brand-blue transition">
-                    <div class="faq-question flex justify-between items-center p-5 sm:p-6" onclick="toggleFaq(this)">
-                        <h4 class="font-bold text-sm sm:text-[17px] pr-4 leading-tight">4) I’m diabetic. Is Gelatine Sculpt safe for me?</h4>
-                        <i class="fa-solid fa-chevron-down faq-icon text-brand-blue text-xs sm:text-sm"></i>
-                    </div>
-                    <div class="faq-answer px-5 sm:px-6 text-text-muted text-[13px] sm:text-sm bg-gray-50/50">
-                        <p class="leading-relaxed">If you have any medical condition, it’s important to consult your healthcare provider before starting any supplement.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item border border-gray-200 rounded-xl bg-white overflow-hidden cursor-pointer shadow-sm hover:border-brand-blue transition">
-                    <div class="faq-question flex justify-between items-center p-5 sm:p-6" onclick="toggleFaq(this)">
-                        <h4 class="font-bold text-sm sm:text-[17px] pr-4 leading-tight">5) I have high blood pressure. Is it safe?</h4>
-                        <i class="fa-solid fa-chevron-down faq-icon text-brand-blue text-xs sm:text-sm"></i>
-                    </div>
-                    <div class="faq-answer px-5 sm:px-6 text-text-muted text-[13px] sm:text-sm bg-gray-50/50">
-                        <p class="leading-relaxed">If you take medication for blood pressure, consult your healthcare provider before using any supplement.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item border border-gray-200 rounded-xl bg-white overflow-hidden cursor-pointer shadow-sm hover:border-brand-blue transition">
-                    <div class="faq-question flex justify-between items-center p-5 sm:p-6" onclick="toggleFaq(this)">
-                        <h4 class="font-bold text-sm sm:text-[17px] pr-4 leading-tight">6) I’m over 50. Will it still work?</h4>
-                        <i class="fa-solid fa-chevron-down faq-icon text-brand-blue text-xs sm:text-sm"></i>
-                    </div>
-                    <div class="faq-answer px-5 sm:px-6 text-text-muted text-[13px] sm:text-sm bg-gray-50/50">
-                        <p class="leading-relaxed">Many purchase Gelatine Sculpt® because they feel their metabolism changed with age. Results vary person to person.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item border border-gray-200 rounded-xl bg-white overflow-hidden cursor-pointer shadow-sm hover:border-brand-blue transition">
-                    <div class="faq-question flex justify-between items-center p-5 sm:p-6" onclick="toggleFaq(this)">
-                        <h4 class="font-bold text-sm sm:text-[17px] pr-4 leading-tight">7) My cravings for sweets feel smaller. Is that from the supplement?</h4>
-                        <i class="fa-solid fa-chevron-down faq-icon text-brand-blue text-xs sm:text-sm"></i>
-                    </div>
-                    <div class="faq-answer px-5 sm:px-6 text-text-muted text-[13px] sm:text-sm bg-gray-50/50">
-                        <p class="leading-relaxed">Supporting satiety and appetite can help reduce snacking impulses and sweet cravings in many users.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item border border-gray-200 rounded-xl bg-white overflow-hidden cursor-pointer shadow-sm hover:border-brand-blue transition">
-                    <div class="faq-question flex justify-between items-center p-5 sm:p-6" onclick="toggleFaq(this)">
-                        <h4 class="font-bold text-sm sm:text-[17px] pr-4 leading-tight">8) My clothes feel looser, but the scale hasn’t changed. Is it working?</h4>
-                        <i class="fa-solid fa-chevron-down faq-icon text-brand-blue text-xs sm:text-sm"></i>
-                    </div>
-                    <div class="faq-answer px-5 sm:px-6 text-text-muted text-[13px] sm:text-sm bg-gray-50/50">
-                        <p class="leading-relaxed">Weight can fluctuate due to many factors. Some notice changes in measurements or fit before seeing changes on the scale.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item border border-gray-200 rounded-xl bg-white overflow-hidden cursor-pointer shadow-sm hover:border-brand-blue transition">
-                    <div class="faq-question flex justify-between items-center p-5 sm:p-6" onclick="toggleFaq(this)">
-                        <h4 class="font-bold text-sm sm:text-[17px] pr-4 leading-tight">9) How do I take Gelatine Sculpt?</h4>
-                        <i class="fa-solid fa-chevron-down faq-icon text-brand-blue text-xs sm:text-sm"></i>
-                    </div>
-                    <div class="faq-answer px-5 sm:px-6 text-text-muted text-[13px] sm:text-sm bg-gray-50/50">
-                        <p class="leading-relaxed">Follow the directions on the label and pair with basic healthy habits like hydration and regular movement.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item border border-gray-200 rounded-xl bg-white overflow-hidden cursor-pointer shadow-sm hover:border-brand-blue transition">
-                    <div class="faq-question flex justify-between items-center p-5 sm:p-6" onclick="toggleFaq(this)">
-                        <h4 class="font-bold text-sm sm:text-[17px] pr-4 leading-tight">10) How long should I use it?</h4>
-                        <i class="fa-solid fa-chevron-down faq-icon text-brand-blue text-xs sm:text-sm"></i>
-                    </div>
-                    <div class="faq-answer px-5 sm:px-6 text-text-muted text-[13px] sm:text-sm bg-gray-50/50">
-                        <p class="leading-relaxed">Many choose a longer routine (multi-month) to support consistent progress over time.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item border border-gray-200 rounded-xl bg-white overflow-hidden cursor-pointer shadow-sm hover:border-brand-blue transition">
-                    <div class="faq-question flex justify-between items-center p-5 sm:p-6" onclick="toggleFaq(this)">
-                        <h4 class="font-bold text-sm sm:text-[17px] pr-4 leading-tight">11) What if it doesn’t work for me?</h4>
-                        <i class="fa-solid fa-chevron-down faq-icon text-brand-blue text-xs sm:text-sm"></i>
-                    </div>
-                    <div class="faq-answer px-5 sm:px-6 text-text-muted text-[13px] sm:text-sm bg-gray-50/50">
-                        <p class="leading-relaxed">Your purchase is protected by a 60-Day Satisfaction Guarantee. If you're not satisfied, you can request a refund according to policy terms.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item border border-gray-200 rounded-xl bg-white overflow-hidden cursor-pointer shadow-sm hover:border-brand-blue transition">
-                    <div class="faq-question flex justify-between items-center p-5 sm:p-6" onclick="toggleFaq(this)">
-                        <h4 class="font-bold text-sm sm:text-[17px] pr-4 leading-tight">12) What if stock runs out?</h4>
-                        <i class="fa-solid fa-chevron-down faq-icon text-brand-blue text-xs sm:text-sm"></i>
-                    </div>
-                    <div class="faq-answer px-5 sm:px-6 text-text-muted text-[13px] sm:text-sm bg-gray-50/50">
-                        <p class="leading-relaxed">Due to demand, availability can change. It’s recommended to secure your order while current supply is available.</p>
+                        <p class="leading-relaxed">Gelatine Sculpt® is designed to support key metabolic and satiety pathways associated with healthy weight management. Consistency is key to seeing results.</p>
                     </div>
                 </div>
             </div>
@@ -542,36 +433,13 @@
                 <h3 class="font-bold text-lg">Privacy & Cookie Policy</h3>
                 <button onclick="closeModals()" class="text-2xl text-gray-400">&times;</button>
             </div>
-            <div class="p-6 overflow-y-auto text-sm text-text-muted space-y-4">
+            <div class="p-6 overflow-y-auto text-sm text-text-muted">
                 <p>Digital privacy is our priority. As an authorized distributor, any information collected through this page is used strictly for analytical purposes to optimize your user experience.</p>
-                <p>Cookies are used to monitor traffic and prevent redundant advertising. We do not sell or share personal data with third-party brokers.</p>
             </div>
         </div>
     </div>
-
-    <div id="termsModal" class="modal">
-        <div class="bg-white rounded-2xl sm:rounded-3xl w-full max-w-2xl max-h-[85vh] flex flex-col overflow-hidden shadow-2xl m-4" onclick="event.stopPropagation()">
-            <div class="px-6 py-4 border-b flex justify-between items-center bg-gray-50">
-                <h3 class="font-bold text-lg">Terms of Service</h3>
-                <button onclick="closeModals()" class="text-2xl text-gray-400">&times;</button>
-            </div>
-            <div class="p-6 overflow-y-auto text-sm text-text-muted">
-                <p>By using this site, you acknowledge that we are an authorized distributor. Fulfillment is managed by the manufacturer.</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="refundsModal" class="modal">
-        <div class="bg-white rounded-2xl sm:rounded-3xl w-full max-w-2xl max-h-[85vh] flex flex-col overflow-hidden shadow-2xl m-4" onclick="event.stopPropagation()">
-            <div class="px-6 py-4 border-b flex justify-between items-center bg-gray-50">
-                <h3 class="font-bold text-lg">Refund Policy</h3>
-                <button onclick="closeModals()" class="text-2xl text-gray-400">&times;</button>
-            </div>
-            <div class="p-6 overflow-y-auto text-sm text-text-muted">
-                <p>All orders are covered by a 60-Day Satisfaction Guarantee. Contact the support provided in your order invoice to initiate a refund.</p>
-            </div>
-        </div>
-    </div>
+    <div id="termsModal" class="modal"><div class="bg-white rounded-2xl sm:rounded-3xl w-full max-w-2xl max-h-[85vh] flex flex-col overflow-hidden shadow-2xl m-4" onclick="event.stopPropagation()"><div class="px-6 py-4 border-b flex justify-between items-center bg-gray-50"><h3 class="font-bold text-lg">Terms of Service</h3><button onclick="closeModals()" class="text-2xl text-gray-400">&times;</button></div><div class="p-6 overflow-y-auto text-sm text-text-muted"><p>By using this site, you acknowledge that we are an authorized distributor. Fulfillment is managed by the manufacturer.</p></div></div></div>
+    <div id="refundsModal" class="modal"><div class="bg-white rounded-2xl sm:rounded-3xl w-full max-w-2xl max-h-[85vh] flex flex-col overflow-hidden shadow-2xl m-4" onclick="event.stopPropagation()"><div class="px-6 py-4 border-b flex justify-between items-center bg-gray-50"><h3 class="font-bold text-lg">Refund Policy</h3><button onclick="closeModals()" class="text-2xl text-gray-400">&times;</button></div><div class="p-6 overflow-y-auto text-sm text-text-muted"><p>All orders are covered by a 60-Day Satisfaction Guarantee. Contact the support provided in your order invoice to initiate a refund.</p></div></div></div>
 
     <script>
         function toggleFaq(element) {
